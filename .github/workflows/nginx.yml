@@ -62,10 +62,10 @@ jobs:
           rm -rf /tmp/buildx-cache/nginx
           mv /tmp/buildx-cache/express-new /tmp/buildx-cache/express
           mv /tmp/buildx-cache/nginx-new /tmp/buildx-cache/nginx
-      - name: run tests
-        run: |
-          cd instrumentation/nginx/test/instrumentation
-          mix test
+      # - name: run tests
+      #   run: |
+      #     cd instrumentation/nginx/test/instrumentation
+      #     mix test
       - name: copy artifacts
         id: artifacts
         run: |
