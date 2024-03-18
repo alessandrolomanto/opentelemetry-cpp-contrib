@@ -1,16 +1,7 @@
 name: nginx instrumentation CI
 
 on:
-  push:
-    branches: "*"
-    paths:
-      - 'instrumentation/nginx/**'
-      - '.github/workflows/nginx.yml'
-  pull_request:
-    branches: [ main ]
-    paths:
-      - 'instrumentation/nginx/**'
-      - '.github/workflows/nginx.yml'
+  workflow_dispatch:
 
 jobs:
   nginx-build-test:
